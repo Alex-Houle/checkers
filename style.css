@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 40px; /* Fixed the space issue */
+    flex-direction: column; /* Ensure vertical layout */
+    font-size: 60px; 
+    font-family: 'Pacifico', cursive;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+body.light-mode{
+    color:black;
+    background-color: #aeaeae;
+}
+body.dark-mode{
+    color: white;
+    background-color: #3e3e3e;
+}
+.banner {
+    background-color: #f39c12;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.checkerboard {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+}
+
+.cell.black {
+    background-color: black;
+}
+
+.cell.white {
+    background-color: rgb(97, 37, 37);
+}
+
+button#toggleBack{
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+    padding: 5px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    width:200px;
+    transition: background-color 0.5s ease;
+}
+
+body.light-mode button#toggleBack {
+    background-color: #bebebe;
+    color: black;
+}
+
+body.dark-mode button#toggleBack {
+    background-color: #555;
+    color: white;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+}
+
+.checkerboard {
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+
+}
+/* Styling for game pieces */
+.piece {
+    width: 55px;
+    height: 55px;
+    border-radius: 90%; 
+    position: absolute;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.3),
+                2px 2px 5px rgba(0, 0, 0, 0.7);
+    border: 2px solid #333;
+}
+
+.red-piece {
+    background: radial-gradient(circle, #ff4d4d, #b30000);
+}
+
+.black-piece {
+    background: radial-gradient(circle, #666, #222);
+}
+
