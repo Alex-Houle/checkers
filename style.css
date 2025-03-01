@@ -93,9 +93,13 @@ body.dark-mode button#toggleBack {
 
 .red-piece {
     background: radial-gradient(circle, #ff4d4d, #b30000);
+    border-color: #890000;
+    border-style: dashed;
 }
 
 .black-piece {
     background: radial-gradient(circle, #666, #222);
+    border-color: rgb(77, 77, 77);
+    border-style: dashed;
 }
 

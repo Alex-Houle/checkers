@@ -1,25 +1,13 @@
-// Function to toggle light/dark mode
 function toggleMode() {
     var button = document.getElementById('toggleBack');
     if (button.innerText === 'Dark Mode') {
         button.innerText = 'Light Mode';
         document.body.classList.add('dark-mode'); // Add dark mode class
+        document.body.classList.remove('light-mode'); // Remove light mode class
     } else {
         button.innerText = 'Dark Mode';
         document.body.classList.remove('dark-mode'); // Remove dark mode class
-    }
-}
-
-// Function to generate the checkerboard
-// Function to toggle light/dark mode
-function toggleMode() {
-    var button = document.getElementById('lightmode');
-    if (button.innerText === 'Dark Mode') {
-        button.innerText = 'Light Mode';
-        document.body.classList.add('dark-mode'); // Add dark mode class
-    } else {
-        button.innerText = 'Dark Mode';
-        document.body.classList.remove('dark-mode'); // Remove dark mode class
+        document.body.classList.add('light-mode'); // Add light mode class
     }
 }
 
